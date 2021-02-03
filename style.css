@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #64cfff;
+}
+
+.container {
+    background-color: #e3f2fd;
+    padding: 1rem;
+    width: 40%;
+    height: 400px;
+}
+
+.container h1 {
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.container h1 span {
+    color: red;
+}
+
+textarea {
+    resize: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    outline: none;
+    width: 100%;
+    height: 280px;
+    border: none;
+    box-shadow: 0px 0 0 2px #e3f2f09f;
+}
+
+button .line {
+    margin: 2px 0;
+    height: 2px;
+    background: black;
+    pointer-events: none;
+}
+
+.container .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 42px;
+}
+
+.bottom p {
+    margin-top: .2rem;
+    font-size: 1.2rem;
+}
+
+.bottom .length-display {
+    color: red;
+}
+
+.bottom .align-options {
+    display: flex;
+    width: 15vw;
+    justify-content: space-between;
+}
+
+.container .align-options button {
+    outline: none;
+    cursor: pointer;
+    padding: 2px 10px;
+    font-size: .9rem;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+button.active .line {
+    background: radial-gradient( #636e72, #e84393);
+}
+
+.align-option.left .line:nth-last-child(3) {
+    width: 30px;
+}
+
+.align-option.left .line:nth-last-child(2) {
+    width: 20px;
+}
+
+.align-option.left .line:nth-last-child(1) {
+    width: 10px;
+}
+
+.align-option.center {
+    align-items: center;
+}
+
+.align-option.center .line:nth-last-child(3) {
+    width: 30px;
+}
+
+.align-option.center .line:nth-last-child(2) {
+    width: 20px;
+}
+
+.align-option.center .line:nth-last-child(1) {
+    width: 30px;
+}
+
+.align-option.right {
+    align-items: flex-end;
+}
+
+.align-option.right .line:nth-last-child(3) {
+    width: 30px;
+}
+
+.align-option.right .line:nth-last-child(2) {
+    width: 20px;
+}
+
+.align-option.right .line:nth-last-child(1) {
+    width: 10px;
+}
+
+.align-option.justify .line {
+    width: 30px;
+}
